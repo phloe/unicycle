@@ -1,0 +1,28 @@
+{
+  "name": "unicycle",
+  "version": "0.9.1",
+  "description": "Minimalist Flux implementation for CRUD",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasmusfl0e/unicycle.git"
+  },
+  "keywords": [
+    "react",
+    "flux"
+  ],
+  "author": {
+    "name": "rasmusfl0e",
+    "email": "rasmusfl0e@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasmusfl0e/unicycle/issues"
+  },
+  "homepage": "https://github.com/rasmusfl0e/unicycle",
+  "dependencies": {
+    "flux": "^2.0.3",
+    "lodash.assign": "^3.2.0"
+  }
+}

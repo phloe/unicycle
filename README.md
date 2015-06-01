@@ -120,7 +120,7 @@ An extension of [[unicycle].actions](#unicycleactions) that will automatically i
 
 ```js
 {
-	create: function,
+	create: ["data"],
 	read: ["data"],
 	update: ["id", "data"],
 	delete: ["id"]
@@ -233,11 +233,11 @@ Unregister a function from being executed on changes.
 * `func` (Function) - The function to be unregistered.
 
 
-### Internal API
+## Internal API
 The following describes the internal API that isn't exposed through `unicycle` - but may be useful to understand.
 
 
-#### Store
+### Store
 
 
 ##### Arguments
@@ -251,13 +251,12 @@ The following describes the internal API that isn't exposed through `unicycle` -
 
 
 
-#### store instance
+### store instance
 
 * [dispatchToken](#storedispatchtoken)
 * [handlers](#storehandlers)
 * [items](#storeitems)
 * [emitChange](#storeemitchange)
-* [get](#storeget)
 
 
 
@@ -278,17 +277,5 @@ The list of items in the store.
 
 #### [store].emitChange
 A method to trigger a change event to execute any registered function.
-
-
-
-#### [store].get
-A method that will find an item.
-
-##### Arguments
-
-* `id` Id of the item to find.
-
-##### Returns
-(Object) An item from the store.
 
 
