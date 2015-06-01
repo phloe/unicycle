@@ -74,11 +74,11 @@ module.exports = new Unicycle();
 
 ### unicycle
 
-* [dispatcher](#unicycledispatcher)
-* [actions](#unicycleactions)
-* [crudActions](#unicyclecrudactions)
-* [store](#unicyclestore)
-* [crudStore](#unicyclecrudstore)
+* [dispatcher](#unicycle-dispatcher)
+* [actions](#unicycle-actions)
+* [crudActions](#unicycle-crudactions)
+* [store](#unicycle-store)
+* [crudStore](#unicycle-crudstore)
 
 
 #### [unicycle].dispatcher
@@ -116,7 +116,7 @@ BookActions.rate(book.id, 3);
 
 
 #### [unicycle].crudActions
-An extension of [[unicycle].actions](#unicycleactions) that will automatically include the signatures for basic CRUD actions:
+An extension of [[unicycle].actions](#unicycle-actions) that will automatically include the signatures for basic CRUD actions:
 
 ```js
 {
@@ -130,7 +130,7 @@ An extension of [[unicycle].actions](#unicycleactions) that will automatically i
 You can override the included signatures as you like.
 
 ##### Arguments
-See [[unicycle].actions](#unicycleactions). The `signatures` argument becomes optional.
+See [[unicycle].actions](#unicycle-actions). The `signatures` argument becomes optional.
 
 ##### Returns
 (Object) An object with action methods.
@@ -174,7 +174,7 @@ Creates a store with handlers for actions - but with added handlers for CRUD:
 ##### Arguments
 * `name` (String) - A name to identify the store.
 * `create` (Function) - Optional. A function to create items in the store. If not supplied raw data is used for item initiation.
-* `handlers` (Object) - Optional. See [[unicycle].store](#unicyclestore).
+* `handlers` (Object) - Optional. See [[unicycle].store](#unicycle-store).
 
 ##### Returns
 (Object) A [storefront](#storefront) object.
@@ -183,11 +183,11 @@ Creates a store with handlers for actions - but with added handlers for CRUD:
 
 ### storefront
 
-* [dispatchToken](#storefrontdispatchtoken)
-* [get](#storefrontget)
-* [getAll](#storefrontgetall)
-* [register](#storefrontregister)
-* [unregister](#storefrontunregister)
+* [dispatchToken](#storefront-dispatchtoken)
+* [get](#storefront-get)
+* [getAll](#storefront-getall)
+* [register](#storefront-register)
+* [unregister](#storefront-unregister)
 
 
 
@@ -243,7 +243,7 @@ The following describes the internal API that isn't exposed through `unicycle` -
 ##### Arguments
 
 * `name` (String) - A name to identify the store.
-* `handlers` (Object) - See [[unicycle].store](#unicyclestore).
+* `handlers` (Object) - See [[unicycle].store](#unicycle-store).
 * `dispatcher` (Object) - An Flux dispatcher instance.
 
 ##### Returns
@@ -253,10 +253,10 @@ The following describes the internal API that isn't exposed through `unicycle` -
 
 ### store instance
 
-* [dispatchToken](#storedispatchtoken)
-* [handlers](#storehandlers)
-* [items](#storeitems)
-* [emitChange](#storeemitchange)
+* [dispatchToken](#store-dispatchtoken)
+* [handlers](#store-handlers)
+* [items](#store-items)
+* [emitChange](#store-emitchange)
 
 
 
