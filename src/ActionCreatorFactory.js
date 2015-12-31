@@ -18,7 +18,7 @@ module.exports = function (dispatcher) {
 					action[arg] = args[index];
 				});
 				dispatcher.dispatch(action);
-			}
+			};
 			
 		});
 		
